@@ -1,0 +1,23 @@
+.services-carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.service-block {
+  flex: 0 0 auto;
+  width: 250px;
+  margin-right: 20px;
+  scroll-snap-align: start;
+  transform: translateZ(0);
+  transition: transform 0.3s ease-out;
+}
+
+.service-block:hover {
+  transform: scale(1.05);
+}
+
+.services-carousel .service-block:last-child {
+  margin-right: 0;
+}
+
